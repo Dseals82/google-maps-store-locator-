@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../client/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Store Locator</title>
+</head>
+<body>
+ 
+    
+    
+    <div role="heading" class="title">Store Locator</div>
+    <div class="input-container">
+        <div class="search">
+            <input type="text" id="zip-code" placeholder="Zip Code" maxlength="10" onkeyup="onEnter(event)">
+            <i class="fa fa-search" aria-hidden="true" onclick="getStores()"></i>
+        </div>
+    </div>
+    <div class="stores-list-container">
+        <div class="stores-list">
+            <div class="intro">
+                <span class="enter-zip">Enter Zip Code...</span>
+                <span class="find-stores">Find Stores Near You</span>
+            </div>
+        </div>
+    </div>
+    <!-- For the map to display on the web page -->
+    <div id="map"></div>
+
+
+
+
+
+
+    <!-- external script for initializing map -->
+    <script src="../client/js/script.js" async>
+        
+    </script>
+    <!-- To load the Maps JavaScript API -->
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjN_D7X6d_dI7tso5GyQ_IsahmsIbmNeQ&callback=initMap&map_ids=696e7ffea63e1448">
+        
+    </script>
+    
+</body>
+</html>
